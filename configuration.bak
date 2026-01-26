@@ -18,28 +18,13 @@
 
     time.timeZone = "America/New_York";
 
-    # Use greetd instead of getty for proper session management with Niri
-    services.greetd = {
-      enable = true;
-      settings = {
-        initial_session = {
-          command = "niri-session";
-          user = "alex";
-        };
-        default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd niri-session";
-          user = "greeter";
-        };
-      };
-    };
+    services.getty.autologinUser = "alex";
 
     programs.niri = {
 	enable = true;
-	package = pkgs.niri.overrideAttrs (oldAttrs: {
-	    doCheck = false;  # Skip tests that are failing
-	});
     };
-    programs.dms-shell.enable = true;
+
+    # XWayland support (optional, but recommended)
     programs.xwayland.enable = true;
 
     programs.steam = {
@@ -71,12 +56,8 @@ environment.systemPackages = with pkgs; [
 	git
 	chromium
 	fastfetch
-	vesktop
-	alacritty
-	fuzzel
-	xwayland-satellite
+	rofi
       ];
-environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
