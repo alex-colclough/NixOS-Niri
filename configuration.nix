@@ -33,6 +33,9 @@
       };
     };
 
+    virtualisation.libvirtd.enable = true;
+    programs.virt-manager.enable = true;
+
     programs.niri = {
 	enable = true;
 	package = pkgs.niri.overrideAttrs (oldAttrs: {
@@ -44,6 +47,15 @@
 
     programs.steam = {
 	enable = true;
+    };
+
+programs.gamemode.enable = true;
+
+
+    xdg.portal = {
+    	enable = true;
+	wlr.enable = true;
+	extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     };
 
     services.pipewire = {
@@ -75,6 +87,10 @@ environment.systemPackages = with pkgs; [
 	alacritty
 	fuzzel
 	xwayland-satellite
+	thunar
+	zed-editor
+	quickshell
+	swayidle
       ];
 environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
