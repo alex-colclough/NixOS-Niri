@@ -13,5 +13,7 @@
       xwayland-satellite
       thunar
       zed-editor
+      nmap
+      starship
   ];
-};
+}

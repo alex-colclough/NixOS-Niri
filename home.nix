@@ -5,9 +5,6 @@
 	home.homeDirectory = "/home/alex";
 	home.stateVersion = "25.11";
 	
-	# Allow unfree packages
-	nixpkgs.config.allowUnfree = true;
-
 	home.packages = with pkgs; [
 	  bibata-cursors
 	];
@@ -32,15 +29,30 @@
 		name = "Bibata-Modern-Classic";
 		size = 20;
 	};
-	programs.yazi.enable = true;
 
 	programs.bash = {
 		enable = true;
 		shellAliases = {
 			btw = "echo i use niri btw";
 		};
-
+		bashrcExtra = ''
+			if [ -f "$HOME/.secrets" ]; then
+				source "$HOME/.secrets"
+			fi
+		'';
            };
+	   
+        services.swayidle = {
+	  enable = true;
+	  timeouts = [
+	    { 
+	      timeout = 300; 
+	      command = "niri msg action power-off-monitors";
+	      resumeCommand = "niri msg action power-on-monitors";
+	    }   
+	  ];
+	  extraArgs = [ "-w" "-d" ];
+	};
 
 	xdg.portal = {
 	  	enable = true;
