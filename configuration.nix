@@ -79,7 +79,7 @@ environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
- system.stateVersion = "25.11";
+ system.stateVersion = "26.05";
 
 }
 

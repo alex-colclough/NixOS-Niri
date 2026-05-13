@@ -14,7 +14,7 @@
 	     };
 
 	     outputs = { nixpkgs, home-manager, niri, ... }: {
-		nixosConfigurations.hyprland-btw = nixpkgs.lib.nixosSystem {
+		nixosConfigurations.ganymede = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
 				./configuration.nix
