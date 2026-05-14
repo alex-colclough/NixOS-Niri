@@ -15,5 +15,6 @@
     zed-editor
     nmap
     starship
+    brave
   ];
 }
