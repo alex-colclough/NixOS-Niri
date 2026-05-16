@@ -11,9 +11,13 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { nixpkgs, home-manager, niri, ... }: {
+  outputs = { nixpkgs, home-manager, niri, nixvim, ... }: {
     nixosConfigurations.ganymede = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -26,6 +30,8 @@
             useUserPackages = true;
             users.alex = import ./modules/home;
             backupFileExtension = "backup";
+            extraSpecialArgs = { inherit nixvim; };
+            sharedModules = [ nixvim.homeManagerModules.nixvim ];
           };
         }
       ];

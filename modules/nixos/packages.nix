@@ -16,5 +16,9 @@
     nmap
     starship
     brave
+    zoom-us
+    opensc
+    pcsc-tools
+    unzip
   ];
 }

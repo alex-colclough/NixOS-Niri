@@ -1,14 +1,11 @@
-{ pkgs, ... }: {
-  programs.neovim = {
+{ ... }: {
+  programs.nixvim = {
     enable = true;
     viAlias = true;
     vimAlias = true;
-    extraConfig = ''
+    extraConfigVim = ''
       set number relativenumber
     '';
-    plugins = [
-      pkgs.vimPlugins.LazyVim
-    ];
   };
 
   programs.bash = {
