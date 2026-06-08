@@ -39,6 +39,5 @@
 
   services.pcscd.enable = true;
 
-  security.pki.certificateFiles = [ ../../hosts/ganymede/Certificates_PKCS7_v5_14_DoD/DoD_PKE_CA_chain.pem ];
 
 }
