@@ -76,6 +76,18 @@ NixOS configuration for **ganymede** — an x86_64 machine running the [niri](ht
 
 `config/` holds a Waybar config and stylesheet using the **Tokyo Night** color palette. Modules: workspaces, active window, network, CPU, memory, disk, clock, tray.
 
+## Why NixOS
+
+- **Reproducibility** — the entire system is defined in one place. Any machine built from this flake will be identical.
+- **Atomic upgrades and rollbacks** — switching to a new config is a single command, and rolling back is just as easy if something breaks.
+- **Declarative package management** — no leftover files, no dependency conflicts. Packages are installed and removed cleanly.
+- **Flakes** — pinned inputs mean the system can be rebuilt exactly as-is months or years later without hunting down the right package versions.
+- **Home Manager** — user-level config (shell, editor, cursor, idle daemon) is managed the same way as the system, so nothing is left to manual setup.
+
+## Upcoming
+
+- **Pentest flake** — a separate NixOS configuration tailored for red team work, with offensive security tooling and a distinct color scheme to make it immediately obvious which environment you're in. Still in the early planning stages.
+
 ## Usage
 
 ```bash
