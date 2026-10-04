@@ -1,0 +1,177 @@
+{
+  "id": "gruvbox",
+  "name": "Gruvbox",
+  "version": "1.0.0",
+  "author": "alex",
+  "description": "Retro groove color scheme",
+  "dark": {
+    "surface": "#1d2021",
+    "surfaceText": "#ebdbb2",
+    "surfaceVariant": "#282828",
+    "surfaceVariantText": "#d5c4a1",
+    "background": "#282828",
+    "backgroundText": "#ebdbb2",
+    "outline": "#7c6f64",
+    "surfaceContainer": "#3c3836",
+    "surfaceContainerHigh": "#504945",
+    "surfaceContainerHighest": "#665c54",
+    "error": "#fb4934",
+    "warning": "#fe8019",
+    "info": "#83a598"
+  },
+  "light": {
+    "surface": "#f9f5d7",
+    "surfaceText": "#3c3836",
+    "surfaceVariant": "#fbf1c7",
+    "surfaceVariantText": "#504945",
+    "background": "#fbf1c7",
+    "backgroundText": "#3c3836",
+    "outline": "#a89984",
+    "surfaceContainer": "#ebdbb2",
+    "surfaceContainerHigh": "#d5c4a1",
+    "surfaceContainerHighest": "#bdae93",
+    "error": "#cc241d",
+    "warning": "#d65d0e",
+    "info": "#458588"
+  },
+  "variants": {
+    "type": "single",
+    "defaults": {
+      "dark": {
+        "accent": "orange"
+      },
+      "light": {
+        "accent": "orange"
+      }
+    },
+    "accents": [
+      {
+        "id": "orange",
+        "name": "Orange",
+        "dark": {
+          "primary": "#fe8019",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#fabd2f",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#d65d0e",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#d79921",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "red",
+        "name": "Red",
+        "dark": {
+          "primary": "#fb4934",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#fe8019",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#cc241d",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#d65d0e",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "yellow",
+        "name": "Yellow",
+        "dark": {
+          "primary": "#fabd2f",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#fe8019",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#d79921",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#d65d0e",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "green",
+        "name": "Green",
+        "dark": {
+          "primary": "#b8bb26",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#8ec07c",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#98971a",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#689d6a",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "aqua",
+        "name": "Aqua",
+        "dark": {
+          "primary": "#8ec07c",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#83a598",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#689d6a",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#458588",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "blue",
+        "name": "Blue",
+        "dark": {
+          "primary": "#83a598",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#8ec07c",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#458588",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#689d6a",
+          "surfaceTint": "#ebdbb2"
+        }
+      },
+      {
+        "id": "purple",
+        "name": "Purple",
+        "dark": {
+          "primary": "#d3869b",
+          "primaryText": "#1d2021",
+          "primaryContainer": "#3c3836",
+          "secondary": "#fb4934",
+          "surfaceTint": "#3c3836"
+        },
+        "light": {
+          "primary": "#b16286",
+          "primaryText": "#fbf1c7",
+          "primaryContainer": "#ebdbb2",
+          "secondary": "#cc241d",
+          "surfaceTint": "#ebdbb2"
+        }
+      }
+    ]
+  },
+  "sourceDir": "gruvbox"
+}

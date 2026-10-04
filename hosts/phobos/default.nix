@@ -1,4 +1,4 @@
-{ ... }: {
+{ lib, ... }: {
   imports = [
     ../shared/hardware-configuration.nix
     ../../modules/nixos/boot.nix
@@ -10,8 +10,10 @@
     ../../modules/nixos/packages.nix
     ../../modules/nixos/fancontrol.nix
     ../../modules/nixos/users.nix
+    ../../modules/nixos/pentest.nix
   ];
 
+  networking.hostName = lib.mkForce "phobos";
   time.timeZone = "America/New_York";
   system.stateVersion = "26.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
