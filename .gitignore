@@ -2,3 +2,6 @@
 *.sha256
 *.pem
 *.zip
+.claude/
+result
+test-fans.sh
