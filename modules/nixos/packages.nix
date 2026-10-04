@@ -20,5 +20,8 @@
     opensc
     pcsc-tools
     unzip
+    btop
+    bat
+    lsd
   ];
 }

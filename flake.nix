@@ -13,7 +13,6 @@
     };
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
@@ -31,7 +30,7 @@
             users.alex = import ./modules/home;
             backupFileExtension = "backup";
             extraSpecialArgs = { inherit nixvim; };
-            sharedModules = [ nixvim.homeManagerModules.nixvim ];
+            sharedModules = [ nixvim.homeModules.nixvim ];
           };
         }
       ];

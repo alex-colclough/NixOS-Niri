@@ -8,6 +8,7 @@
     ../../modules/nixos/virtualization.nix
     ../../modules/nixos/gaming.nix
     ../../modules/nixos/packages.nix
+    ../../modules/nixos/fancontrol.nix
     ../../modules/nixos/users.nix
   ];
 
